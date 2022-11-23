@@ -1,7 +1,11 @@
 // db.persons.aggregate([])
 
-db.persons.aggregate([ 
-   {
-     $match:{isActive:true}
-   }
- ])
+//db.persons.aggregate([ 
+//   {
+//     $match:{isActive:true}
+//   }
+// ])
+
+db.persons.aggregate([ {$match :{gender:"male"}}])
+
+db.persons.aggregate([ {$match: {tags:{$size:3}}}])
