@@ -1,1 +1,7 @@
-db.persons.aggregate([])
+// db.persons.aggregate([])
+
+db.persons.aggregate([ 
+   {
+     $match:{isActive:true}
+   }
+ ])
